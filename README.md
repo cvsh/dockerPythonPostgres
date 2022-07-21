@@ -11,3 +11,10 @@
 * psql -U postgres 
 * \c googledata
 * SELECT * FROM orders;
+
+# Admin creds 
+* admin
+* password
+
+# Spreadsheets itself
+* https://docs.google.com/spreadsheets/d/10KFiOJ8vuE3eX9ysA_KTjySfkheDP4xVOds91C-7r7E/edit#gid=0

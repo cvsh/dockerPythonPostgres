@@ -1,0 +1,26 @@
+{% if orders_all %}
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Order Number</th>
+        <th scope="col">Date</th>
+        <th scope="col">Price (USD)</th>
+        <th scope="col">Price (RUB)</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for order in orders_all %}
+            <tr>
+                <td>{{ order.id }}</td>
+                <td>{{ order.order_number }}</td>
+                <td>{{ order.date }}</td>
+                <td>{{ order.price_usd }}</td>
+                <td>{{ order.price_rub|floatformat:2 }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+        {% else %}
+            <p>No orders are available.</p>
+        {% endif %}
